@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi | Portfolio Étudiante</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MonPortfolio</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h1 class="page-title">Contactez-moi</h1>
+        <p class="page-subtitle">N'hésitez pas à me contacter pour discuter de projets ou collaborations</p>
+
+        <div class="contact-wrapper">
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <div>
+                        <h3>Statut</h3>
+                        <p>Étudiante en Informatique</p>
+                        <p class="detail">2ème année - ENASTIC</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>h.sougour.adam2025@gmail.com</p>
+                        <p class="detail">Réponse sous 24h</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Téléphone</h3>
+                        <p>+235 65 54 83 83</p>
+                        <p class="detail">Disponible 9h-18h</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Localisation</h3>
+                        <p>N'Djamena, Tchad</p>
+                        <p class="detail">Quartier: Guinébor</p>
+                    </div>
+                </div>
+
+                <!-- Réseaux sociaux étudiants -->
+                <div class="contact-social">
+                    <h3>Mes Réseaux</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaire de contact -->
+            <div class="contact-form">
+                <h2>Envoyez-moi un message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom Complet *</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom et prénom">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="projet">Proposition de projet</option>
+                            <option value="stage">Demande de stage</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            J'accepte que mes informations soient utilisées pour me recontacter
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+
+        <!-- Carte de localisation -->
+        <section class="map-section">
+            <h2 class="section-title">Ma Localisation</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31197.524092055847!2d15.02046255803542!3d12.127042672132668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11fc8ca6e9c6e5f1%3A0x23e9ee2bfc49aec8!2sGuinebor%2C%20N%27Djamena%2C%20Tchad!5e0!3m2!1sfr!2sfr!4v1709746000000!5m2!1sfr!2sfr" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Carte de Guinébor, N'Djamena, Tchad">
+                </iframe>
+            </div>
+            <div class="location-info">
+                <p><i class="fas fa-school"></i> École: ENASTIC, N'Djamena</p>
+                <p><i class="fas fa-map-pin"></i> Quartier: Guinébor</p>
+                <a href="https://maps.google.com/?q=ENASTIC+N'Djamena+Tchad" target="_blank" class="btn map-btn">
+                    <i class="fas fa-directions"></i> Itinéraire vers ENASTIC
+                </a>
+            </div>
+        </section>
+
+        <!-- Informations académiques -->
+        <section class="academic-contact">
+            <h2 class="section-title">Informations Académiques</h2>
+            <div class="academic-info">
+                <div class="academic-card">
+                    <i class="fas fa-university"></i>
+                    <h3>Mon École</h3>
+                    <p>ENASTIC - École Nationale Superieure des Technologies de l'Information et de la Communication</p>
+                    <p class="address">N'Djamena, Tchad</p>
+                </div>
+                
+                <div class="academic-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Ma Formation</h3>
+                    <p>Licence en Informatique</p>
+                    <p class="detail">Spécialité: Développement d'Applications</p>
+                    <p class="detail">Année: 2ème année</p>
+                </div>
+                
+                <div class="academic-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Disponibilité</h3>
+                    <p>Pour les stages: Juillet-Août 2026</p>
+                    <p class="detail">Projets académiques: Toute l'année</p>
+                    <p class="detail">Collaborations: Week-ends</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Mon Portfolio</h3>
+                <p>Étudiante en 2ème année Informatique<br>ENASTIC, N'Djamena</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Rapide</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> h.sougour.adam2025@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +235 65 54 83 83</li>
+                    <li><i class="fas fa-map-marker-alt"></i> N'Djamena, Tchad</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ce Projet</h3>
+                <p>Réalisé dans le cadre du cours MTIC2</p>
+                <p>Enseignant: Abdel f. ATIM</p>
+                <p>Date: Février 2026</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hawa SougourAdam - Étudiante ENASTIC | Projet MTIC2 - Méthodologie de Conception des Sites Web</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
